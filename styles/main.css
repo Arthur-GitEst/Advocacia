@@ -1,0 +1,388 @@
+body {
+  background: #1F2C38;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 1rem;
+  padding-right: 2rem;
+  background: #1F2C38;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #FAFAFA;
+}
+
+.nav-bar img {
+  max-height: 5rem;
+}
+
+.nav-bar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-bar-links a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-section {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-cell {
+  height: 650px;
+  box-shadow: inset 0 0 15px #000;
+}
+
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: url('./img/slide3.jpg') center;
+  background-size: cover;
+  width: 100%;
+}
+
+.carousel-cell:nth-child(2) {
+  background: url('./img/slide2.jpg') center;
+  background-size: cover;
+}
+
+.carousel-cell h2 {
+  margin-top: 6.5rem;
+  font-size: 54px;
+  font-style: italic;
+  color: #FAFAFA;
+}
+
+.carousel-cell h2:hover {
+  cursor: default;
+}
+
+.carousel-cell a {
+  margin-bottom: 6rem;
+  border-radius: 50px;
+}
+
+.carousel-cell button {
+  padding: 1rem;
+  border: 2px #FAFAFA solid;
+  border-radius: 50px;
+  background: transparent;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FAFAFA;
+}
+
+.carousel-cell button:hover {
+  background: #B9874F;
+  color: #1F2C38;
+  transition: 400ms;
+  cursor: pointer;
+}
+
+.flickity-button {
+  width: 100px !important;
+  height: 100px !important;
+  background: transparent !important;
+  color: #FAFAFA !important;
+}
+
+.flickity-prev-next-button.previous {
+  left: 0 !important;
+}
+
+.flickity-prev-next-button.next {
+  right: 0 !important;
+}
+
+.flickity-page-dots {
+  bottom: 1rem !important;
+}
+
+.flickity-page-dots .dot {
+  border: 2px solid #FAFAFA !important;
+  background: transparent !important;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: #FAFAFA !important;
+}
+
+.sobre-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1F2C38;
+  color: #FAFAFA;
+  padding-bottom: 2rem;
+  width: 100%;
+  /* box-shadow: inset 0 -5px 20px #000; */
+}
+
+.sobre-section span {
+  content: '';
+  display: inline-block;
+  background: #B9874F;
+  height: 1.6px;
+  width: 92%;
+  margin-top: 1rem;
+}
+
+.sobre-info {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.sobre-info h2 {
+ text-align: center;
+ margin-bottom: 1rem;
+ font-size: 28px;
+ font-style: italic;
+ font-weight: 600;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 2rem;
+}
+
+.sobre-info h2::before {
+  display: inline-block;
+  content: '';
+  height: .6px;
+  width: 40%;
+  background: #B9874F;
+  margin-right: 1rem;
+}
+
+.sobre-info h2::after {
+  display: inline-block;
+  content: '';
+  height: .6px;
+  width: 40%;
+  background: #B9874F;
+  margin-left: 1rem;
+}
+
+.sobre-text p {
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+  margin-inline: 2rem;
+  font-size: 15px;
+}
+
+
+.areas-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  background: #1F2C38;
+  /* padding-inline: 100%; */
+  padding-bottom: 7rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3.5rem;
+  gap: 3rem 6rem;
+}
+
+.areas-title {
+  font-size: 36px;
+  font-weight: 600;
+  text-align: center;
+  color: #FAFAFA;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+.areas-subtitle {
+  text-align: center;
+  color: #B9874F;
+  margin-top: 2rem;
+}
+
+.areas-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+  height: 140px;
+  width: 220px;
+  color: #1F2C38;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.areas-card:hover {
+  background: #B9874F;
+  transition: 400ms;
+}
+
+.areas-card img {
+  height: 65px;
+  width: 73px;
+  margin-bottom: 1rem;
+}
+
+.rodape {
+  height: 10rem;
+  padding-top: 2.5rem;
+  padding-bottom: .5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+  width: 100%;
+  background: #B9874F;
+  color: #1F2C38;
+  justify-items: center;
+  font-family: 'Open Sans', sans-serif;
+  /* box-shadow: 0 -3px 15px #000; */
+}
+
+.rodape-info h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.rodape-info p {
+  margin-bottom: .7rem;
+}
+
+.rodape-info p:hover {
+  cursor: default;
+  text-decoration: underline;
+}
+
+.rodape-info a {
+  margin-bottom: .7rem;
+  color: #1F2C38;
+}
+
+.rodape-info a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dev {
+  grid-column: 4;
+  justify-self: start;
+}
+
+.trademark {
+  grid-row: 2;
+  grid-column: span 4;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 420px) {
+
+  .nav-bar {
+    justify-content: center;
+  }
+
+  .nav-bar-links {
+    display: none;
+  }
+
+  .carousel-cell {
+    background: url(./img/slide3-mobile.jpg) center;
+  }
+
+  .carousel-cell:nth-child(2) {
+    background: url(./img/slide2-mobile.jpg) center;
+  }
+
+  .flickity-button {
+  width: 60px !important;
+  height: 60px !important;
+  background: transparent !important;
+  color: #FAFAFA !important;
+  }
+
+  .flickity-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  }
+
+  .flickity-prev-next-button.previous {
+  left: .6rem !important;
+  }
+
+  .flickity-prev-next-button.next {
+  right: .6rem !important;
+  }
+
+  .areas-section {
+    padding-inline: 0;
+  }
+
+  .areas-grid {
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .areas-card {
+    height: 100px;
+    width: 150px;
+  }
+
+  .areas-card img {
+    height: 50px;
+  }
+
+  .rodape {
+    gap: 4rem;
+  }
+
+  .rodape-info h2 {
+    font-size: 16px;
+  }
+
+  .rodape-info p, .rodape-info a {
+    font-size: 12px;
+  }
+
+  .contato {
+    justify-self: start;
+    grid-column: 2;
+  }
+
+  .dev {
+    grid-column: 3;
+    justify-self: end;
+  }
+
+  .trademark {
+    font-size: 14px;
+  }
+
+}
